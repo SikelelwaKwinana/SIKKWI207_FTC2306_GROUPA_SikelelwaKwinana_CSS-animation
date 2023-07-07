@@ -1,0 +1,50 @@
+ /* The animation code
+@keyframes animatedSquare {
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}*/
+
+/* The element to apply the animation to */
+div {
+  width: 100px;
+  height: 100px;
+  animation-name: instaLogo;
+ /* animation-duration: 5s;
+  image-orientation: flip;*/
+      
+} 
+/*Logo size*/
+.logo img {
+  display: block;
+  margin-left: 600px;
+  margin-top:100px ;
+  width: 100px;
+  
+}
+@keyframes myAnimation {
+  0% {
+    filter: grayscale(0%);
+    transform: translateX(0px);
+  }
+  50% {
+    filter: grayscale(50%);
+    transform: translateX(50px);
+  }
+  100% {
+    filter: grayscale(100%);
+    transform: translateX(100px);
+  }
+}
+.logo img:hover {
+
+  image-orientation: flip;
+  animation: myAnimation 5s infinite;
+}
+
+
+
+
+
+
